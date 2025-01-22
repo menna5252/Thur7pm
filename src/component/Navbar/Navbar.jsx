@@ -35,7 +35,8 @@ const Navbar = ({ setQuery}) => {
             onChange={(e) => setQuery(e.target.value)}
           />
         )}
-        <Link to="/favourites" className="relative text-white dark:text-gray-800 text-xl">
+      <div className="icons flex gap-2">
+      <Link to="/favourites" className="relative text-white dark:text-gray-800 text-xl">
           <i className="fas fa-heart"></i>
         </Link>
        
@@ -47,6 +48,7 @@ const Navbar = ({ setQuery}) => {
     <i className="fas fa-moon"></i> 
   )}
 </button>
+      </div>
       
     </nav>
   );
