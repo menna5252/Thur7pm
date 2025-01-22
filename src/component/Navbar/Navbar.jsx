@@ -20,11 +20,11 @@ const Navbar = ({ setQuery}) => {
 
    
   return (
-    <nav className="bg-gray-800 dark:bg-gray-200 text-white dark:text-black  py-4 px-8 flex justify-between items-center">
+    <nav className="bg-gray-800 dark:bg-gray-200 text-white dark:text-black  py-4 px-4 flex justify-between items-center">
       <Link to="/" className="text-2xl font-bold">
         Forkify
       </Link>
-      <div className="flex gap-4 items-center">
+     
      
         {location.pathname !== "/favourites" && (
           <input
@@ -47,7 +47,7 @@ const Navbar = ({ setQuery}) => {
     <i className="fas fa-moon"></i> 
   )}
 </button>
-      </div>
+      
     </nav>
   );
 };
