@@ -31,7 +31,7 @@ const Navbar = ({ setQuery}) => {
             type="text"
 
             placeholder="Search recipes..."
-            className="px-4 py-2 rounded-md border border-gray-500 text-black"
+            className="px-4 py-2 md:w-[500px] w-[200px] rounded-md border border-gray-500 text-black"
             onChange={(e) => setQuery(e.target.value)}
           />
         )}
