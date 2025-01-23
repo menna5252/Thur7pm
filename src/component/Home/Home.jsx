@@ -9,7 +9,7 @@ const colorStyle = 'dark:white black'
     const [recipes, setRecipes] = useState([]);
     const [loading, setLoading] = useState(false);
     const [favourites, setFavourites] = useState([]);
-    let [color, setColor] = useState(colorStyle);
+   
     
 
 
@@ -23,6 +23,7 @@ const colorStyle = 'dark:white black'
          ` https://forkify-api.herokuapp.com/api/v2/recipes?search=${query}`
         );
         setRecipes(response.data.data.recipes); 
+        console.log(response.data.data.recipes)
       } catch (error) {
         console.error("Error fetching recipes:", error);
       } finally {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const RecipeCard = ({ recipe, toggleFavourite, isFavourite ,onRemove,Icon}) => {
+const RecipeCard = ({ recipe, toggleFavourite, isFavourite ,onRemove}) => {
   const [showModal, setShowModal] = useState(false);
 
  
